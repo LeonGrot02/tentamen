@@ -1,4 +1,4 @@
-/* Skriv din Anonymitetskod här */
+/* Skriv din Anonymitetskod här ISGA11-0041-XTA*/
 
 /* Länka in webfonten Montserrat här*/
 
@@ -17,11 +17,46 @@ header>img {
 
 /* ****************************************************************************** */
 /*Deluppgift 2, Meny */
+nav {
+    width: 95%;
+    height: 30px;
+    background: rgb(241, 252, 255);
+}
 
+.dropdownContainer {
+    /*placeholder class*/
+}
 
+.dropdownContainer:hover {
+    background-color: lightgray;
+}
 
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
 
+nav ul a {
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+}
 
+nav ul a:hover {
+    color: black;
+    background-color: lightgray;
+}
+
+.dropdown {
+    display: none;
+    z-index: 1000;
+    background-color: rgb(241, 252, 255); 
+}
+
+.dropdownContainer:hover .dropdown {
+    display: block;
+}
 /* ****************************************************************************** */
 /* Deluppgift 3, Layout 
 

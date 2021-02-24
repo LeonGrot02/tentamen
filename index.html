@@ -1,5 +1,5 @@
 <!DOCTYPE html5>
-<!--Skriv din anonymitetskod här: -->
+<!--Skriv din anonymitetskod här: ISGA11-0041-XTA-->
 <html lang="sv">
   <head>
     <meta charset="utf-8">
@@ -10,44 +10,68 @@
   </html>
   <html>
   <body>
-    <!-- plats för logotyp-->    
+    <img src="images/logotyp.svg"> 
+    <header>
     <h1>Intresseföreningen fjäderfäna</h1>
-    <ul>
-      <li><a href="#">Hem</a></li>
-      <li>Aktuella grupper
-        <ul>
-          <li><a href="#">Mesar</a></li>
-          <li><a href="#">Finkar</a></li>
-          <li><a href="#">Kråkor</a></li>
-          <li><a href="#">Gökar</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Om oss</a></li>
-      <li><a href="#">Ansök om medlemskap</a></li>
-    </ul>
-
-    <h2>Välkommen till föreningen fjäderfäna!</h2>
-    <p>Mitt intresse för fjäderfän väcktes en vårmorgon 1896 då jag steg upp på morgonen 
-      och fick en uppenbaraelse, jag skulle berika värden med mitt fågelintresse och tvinga
-      alla som inte gillar dem att gå med i föreningen ändå. För att kunna leva på mitt intresse 
-      har jag valt en annorlunda strategi, nämligen att tvångsansluta alla jag känner och tvinga 
-      dem att betala en hutlös årsavgift på inte mindre än 50 000 riksdaler.
-    </p>
-    <h3>Klicka på en kategori nedan</h3>
-    <div>
-      <!-- plats för bild på en gök-->        
-      <h4>Gökar</h4>
-    </div>
-    <div>
-      <!-- plats för bild på en fink-->
-      <h4>Finkar</h4>
-    </div>
-    <div>
-      <!-- plats för bild på en med mes-->
-      <h4>Mesar</h4>
-    </div>    
-    <h3>Joina Räkan</h3>
-    <p>Signa upp och gå med i vår systerförening <strong>Räkan</strong></p> 
-    <paragraf>&copy; Föreningen intressanta finkar 2021</paragraf>    
+        <nav>
+            <ul>
+              <li><a href="#">Hem</a></li>
+              <li class="dropdownContainer">Aktuella grupper
+                <ul class="dropdown">
+                  <li><a href="#">Mesar</a></li>
+                  <li><a href="#">Finkar</a></li>
+                  <li><a href="#">Kråkor</a></li>
+                  <li><a href="#">Gökar</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Om oss</a></li>
+              <li><a href="#">Ansök om medlemskap</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Välkommen till föreningen fjäderfäna!</h2>
+        <p>Mitt intresse för fjäderfän väcktes en vårmorgon 1896 då jag steg upp på morgonen 
+          och fick en uppenbaraelse, jag skulle berika värden med mitt fågelintresse och tvinga
+          alla som inte gillar dem att gå med i föreningen ändå. För att kunna leva på mitt intresse 
+          har jag valt en annorlunda strategi, nämligen att tvångsansluta alla jag känner och tvinga 
+          dem att betala en hutlös årsavgift på inte mindre än 50 000 riksdaler.
+        </p>
+        <h3>Klicka på en kategori nedan</h3>
+        <div>
+          <img src="images/g%C3%B6k.png" alt="en gök">        
+          <h4>Gökar</h4>
+        </div>
+        <div>
+          <img src="images/fink.png" alt="en fink">
+          <h4>Finkar</h4>
+        </div>
+        <div>
+          <img src="images/mes.png" alt="en mes">
+          <h4>Mesar</h4>
+        </div>
+    </main>   
+    <aside>
+        <h3>Joina Räkan</h3>
+        <p>Signa upp och gå med i vår systerförening <strong>Räkan</strong></p>
+        <form id="signup">
+            <fieldset>
+                <legend>Upggifter</legend>
+                <label for="name">Ditt namn:</label>
+                <input type="text" name="name" required>
+                Välj hur du vill betala:<br>
+                <input type="radio" id="yearly" name="subscription" value="yearly">
+                <label for="yearly">Betala 995kr/år</label><br>
+                <input type="radio" id="monthly" name="subscription" value="monthly">
+                <label for="monthly">Betala 199/mån</label><br>
+                <label for="comment">Orderkommentarer</label><br>
+                <textarea rows="5" name="comment" form="signup"></textarea><br><br>
+                <input type="submit" value="skicka ansökan">
+            </fieldset>
+        </form>
+    </aside>
+    <footer>
+        <p>&copy; Föreningen intressanta finkar 2021</p>    
+    </footer>
   </body>
 </html>
