@@ -67,7 +67,7 @@ nav ul a:hover {
 body {
     background: url(../images/owls.png);
     font-family: 'Montserrat', sans-serif;
-    margin: 2rem;
+    padding: 2rem;
 }
 
 header {
@@ -134,7 +134,8 @@ div h4 {
     position: absolute;
     bottom: -22px;
     width: 100%;
-    height: 40px;
+    height: 60px;
+    padding-top: 20px;
     border-bottom: 2px solid black;
     border-left: 2px solid black;
     border-right: 2px solid black;
@@ -149,17 +150,103 @@ div img {
 }
 /* ****************************************************************************** */
 /*Deluppgift 4, Responsivitet */ 
-@media screen and (max-width: 1201px) and (min-width: 400px) {
+@media screen and (max-width: 1200px) and (min-width: 401px) {
+    nav {
+        height: 40px;
+        font-size: 25px;
+    }
+    
+    nav ul li {
+        margin: 5px 20px 0px 20px;
+    }
+    
     main {
-        width: 100%;    
+        width: 100%;  
+        height: 500px;
+    }
+    
+    main p {
+        text-align: left;
     }
     
     aside {
         width: 100%;
+        height: auto;
+    }
+    
+    form {
+        font-size: 17px;
+    }
+    
+    input[type="text"] {
+        width: 95%;
+    }
+    
+    input[type="submit"] {
+        width: 95%;
+    }
+    
+    input[type="radio"] {
+        width: 95%;
+        height: 20px;
+    }
+    
+    textarea {
+        width: 95%;
+        height: 13%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        margin: 0px;
+        padding: 0px;
+        font-size: 14px;
+    }
+    
+    nav {
+        font-size: 17px;
+        height: 40px;
+    }
+    
+    nav ul {
+        justify-content: space-between;
+        margin: 0px;
+    }
+    
+    nav ul li {
+        margin: auto;
+    }
+    
+    main {
+        text-align: center;
+        width: 100%;
+        height: 750px;
+    }
+    
+    main p {
+        text-align: left;
+    }
+    
+    /*kunde inte få den sista att hamna i mitten*/
+    div {
+        width: 48%;
+        margin: 1%;
+    }
+    
+    div img {
+        border-bottom: none;
     }
     
     div h4 {
-        margin-bottom: 10.4%;
+        position: relative;
+        bottom: 3px;
+        padding: 20px;
+        margin: 0px;
+    }
+    
+    aside {
+        display: none;
     }
 }
 
