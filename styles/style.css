@@ -1,7 +1,7 @@
 /* Skriv din Anonymitetskod här ISGA11-0041-XTA*/
 
 /* Länka in webfonten Montserrat här*/
-
+/* https://fonts.google.com/specimen/Montserrat?query=montserrat&preview.text_type=custom */
 
 * {
   box-sizing: border-box;
@@ -19,6 +19,8 @@ header>img {
 /*Deluppgift 2, Meny */
 nav {
     width: 95%;
+    margin-left: auto;
+    margin-right: auto;
     height: 30px;
     background: rgb(241, 252, 255);
 }
@@ -61,12 +63,53 @@ nav ul a:hover {
     display: block;
 }
 /* ****************************************************************************** */
-/* Deluppgift 3, Layout 
+/* Deluppgift 3, Layout */
+body {
+    background: url(../images/owls.png);
+    font-family: 'Montserrat', sans-serif;
+    margin: 2rem;
+}
 
+header {
+    background-color: lightskyblue;
+    border-radius: 5px;
+}
 
+header img {
+    height: 20px;
+    width: 20px;
+}
 
+main {
+    float: left;
+    width: 80%;
+    background-color: rgba(255,255,255,0.9);
+    text-align: center;
+}
 
+aside {
+    float: right;
+    width: 20%;
+    background-color: rgba(100,100,100,0.9);
+}
 
+footer {
+    background-color: lightskyblue;
+    border-radius: 5px;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+div {
+    float: left;
+    width: 20%;
+    margin-left: 10%;
+}
+
+div img {
+    max-width: 100%;
+}
 /* ****************************************************************************** */
 /*Deluppgift 4, Responsivitet */ 
 
